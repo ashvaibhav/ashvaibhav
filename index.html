@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vaibhav Agarwal</title>
+    <base target="_blank">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vaibhav Agarwal Website">
+    <meta name="author" content="Vaibhav Agarwal">
+	<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-responsive.css"  type="text/css"/>
+    <!-- <link rel="stylesheet" href="css/cyborg.css"  type="text/css"/> -->
+
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<style type="text/css">
+	.hoverLink{
+		/*border-bottom:1px dashed #999;
+		cursor:pointer;		*/
+	}
+	[title]{
+        /*border-bottom:1px dashed #999;		*/
+        font-style:italic;
+	}
+    @media (max-width: 979px) {
+        body {
+            padding-top: 0px; /* When using the navbar-top-fixed */
+        }
+    }
+    body > .container {
+        padding-top:90px;
+    }
+    /*.active{
+        color: white;
+    }*/
+    #menu > li{
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        padding: 17px 15px 17px;
+        display: block;
+        cursor: pointer;
+        color:#999999;
+    }
+    #menu > li + .active, #menu > li:hover{
+        color: #ffffff;
+        background-color: transparent;
+    }
+    .project .title{
+        line-height: 2.0em;
+        color:/#0000FF;
+        font-style:bold;
+    }
+    .project .description{
+        font-size: 1.0em;
+        line-height:1.4em;
+    }
+    .project .role{
+        font-size:0.8em;
+        line-height:2em;
+        color: gray;
+        vertical-align: top;
+    }
+    .text-justify{
+        text-align: justify;
+    }
+    /*body > .container{
+        padding-top:30px;
+    }*/
+    .footer{
+        position: absolute;
+        margin-top: -1pt; /* negative value of footer height */
+        height: 20pt;
+        clear:both;
+        padding:5pt;
+    }
+</style>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="brand" href="/">Vaibhav Agarwal</a> -->
+            <div class="nav-collapse collapse">
+                <ul class="nav" id="menu" onclick="javascript:highlightMenu();">
+                    <li class="active" name='home'><a href="#" target="_self"><i class="icon-home icon-white"></i> Home</a></li>
+                    <li name='portfolio'><a href="#" target="_self">Portfolio</a></li>
+                    <li name='process'><a href="#" target="_self">Process</a></li>
+                    <!--<li><a href="#">Concepts</a></li>
+                    <li><a href="#">Blog</a></li>-->
+                    <li name='resume'><a href="#" target="_self">Resume</a></li>
+                    <li name='contact'><a href="#" target="_self">Contact</a></li>
+                    <!-- <li><a href="">TEST</a></li> -->
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+	<div class="container">
+      <div> <!-- class="hero-unit" -->
+        <div id="pageContent" class="row-fluid">
+            <div id="home" class="show">
+                <div class="row span12">
+                    <div class="span10">
+                		<h1>Vaibhav Agarwal</h1>
+                        <div class="text-right">
+                            <p><em>A developer, thinker, designer, student... for life <!-- :) -->
+                            </em></p>
+                        </div>
+        				<p class="text-justify">
+        					Vaibhav is a person who works with <span class="hoverLink">adrenaline rush</span>. He believes in breaking boundaries and pushing his  limits to get his dreams realized. He strongly follows the principle of <a href="http://www.wikihow.com/Make-the-World-a-Better-Place">making Earth a better place to live </a> and is passionate about analyzing and simplifying everything he finds difficult, to make somebody else's life easier.
+        				</p>
+                        <p>
+        					Vaibhav came to US with a blast stopping in four magnificient <span title="New Delhi, London, Chicago, Los Angeles">cities</span> across three <span title="India, United Kingdom, United States">countries</span> on the same 37 hour long first day of the year 2012 and was absolutely mesmerized by the first snowfall of his lifetime.
+                	</div>
+                    <div class="span2"><BR><BR>
+                            <img src="img/MeSitting.jpg" class="img-circle img-polaroid"/>
+                    </div>
+                </div>
+                <div class="row-fluid span12"></div>
+                <div class="row-fluid span12 text-center">
+                    <div class="span2">
+                        <img style="height:80px;width:150px;" src="img/Home/Aster.jpg" class="img-polaroid"/>
+                    </div>
+                    <div class="span2">
+                        <img style="height:80px;width:150px;" src="img/Home/infosys.gif" class="img-polaroid"/>
+                    </div>
+                    <div class="span2">
+                        <img style="height:80px;width:150px;" src="img/Home/usc.jpg" class="img-polaroid"/>
+                    </div>
+                    <div class="span2">
+                        <img style="height:80px;width:150px;" src="img/Home/hikeitup.png" class="img-polaroid"/>
+                    </div>
+                    <div class="span2">
+                        <img style="height:80px;width:150px;" src="img/Home/triplepulse.png" class="img-polaroid"/>
+                    </div>
+                    <div class="span2">
+                        <img style="height:80px;width:150px;" src="img/Home/usc_imd.jpg" class="img-polaroid"/>
+                    </div>
+                </div>
+                <div class="row-fluid span12"></div>
+            </div>
+            <div id="portfolio" class="hide">
+                <BR />
+                <div class="row-fluid">
+                    <div class="project span12">
+                        <div class="span3">
+                            <img style="height:180px;width:402px;" src="img/Portfolio/vaka2.jpg"/>
+                        </div>
+                        <div class="span9">
+                            <div class="title">
+                                VAKA Media Calendar (Android Utility App)
+                            </div>
+                               <div class="role">
+                                Requirement Gathering | Storyboards | Balsamiq Wireframes | Frontend Code | Usability Testing
+                            </div>
+                            <div class="description text-justify">
+                                    Professionals when in hurry tend to loose out important but insignificant in the moment events to capture in their calendar missing on important events. VAKA Media Calendar is an android app which seamlessly integrates with currently used calendar app and enables users to quickly create events and reminders even in situations of hurry and meetings.
+                                </p>
+                                <p>
+                                    In a team of four, I covered the storyboarding, paper prototyping, balsamiq wireframing and coding the HTML, CSS and JS part. Most importantly, I was responsible for requirement gathering from target audience and Usability Testing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <BR/>
+                <div class="row-fluid">
+                    <div class="project span12" href="http://developer.teradata.com/aster/articles/introducing-aster-lens">
+                        <div class="span8">
+                            <div class="title">
+                                <a href="http://developer.teradata.com/aster/articles/introducing-aster-lens">Asterlens (Teradata Aster)</a>
+                            </div>
+                            <div class="role">
+                                User Research | Market Research | Usability Testing | Front End Bug Fixing | Installation UX Enhancement
+                            </div>
+                            <div class="description text-justify">
+                                <p>
+                                    Aster Lens is a new interactive Web application for Aster 5.10.  It allows Users to find, view, and share results from their respective platform functions.  It's a quantum leap forward compared to the old way of visualizing where the answer set would provide you with a URL that you have to Copy/Paste into a Web browser.
+                                </p>
+                                <p>
+                                    Performed usability study with non development users on the application, analyzed experiences and implemented changes to rectify the shortcomings. Constant coordination with the development team for fixing urgent issues for the launch. Committed several usability code enhancements at crunch time.
+                                </p>
+                                <p>
+                                    Market Analysis, interview users and understand what is expected out of future App Discovery Platform were also included in my job role during the internship. Presented my ideas and concerns to the VP and dev team manager for changing application architecture and incorporating several user requirements
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <img src="img/Portfolio/asterlens2.png"/>
+                        </div>
+                    </div>
+                </div>
+                <BR/>
+                <div class="row-fluid">
+                    <div class="project span12" href="http://developer.teradata.com/aster/articles/introducing-aster-lens">
+                        <div class="span4">
+                            <img src="img/Portfolio/cardmarathon.jpg"/>
+                        </div>
+                        <div class="span8">
+                            <div class="title">
+                                The Card Marathon
+                            </div>
+                            <div class="role">
+                                Game Mechanics Design | Game Play Test | Interviews
+                            </div>
+                            <div class="description text-justify">
+                                <p>
+                                    A card games based on the concept of a Marathon race, where an athlete has to cross all the milestones and reach the finishing line before the rest. Its a turn based 2 player game with objective to arrange cards in a specific sequence to complete a milestone. Player finishing all the milestones first wins.
+                                </p>
+                                <p>
+                                    Made several iterations of the emotion and game rules to nail it down. During the process, broke perseverance to emotion with hope, annoyance, competition, collaboration, shadenfreude and passion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <BR/>
+                <div class="row-fluid">
+                    <div class="project span12" href="http://developer.teradata.com/aster/articles/introducing-aster-lens">
+                        <div class="span8">
+                            <div class="title">
+                                Game of Quidditch (iPhone based Harry Potter game)
+                            </div>
+                            <div class="role">
+                                Game Lead Producer | Mechanics Design | Level Design | Game Play Test | Statistics (Game Balance)
+                            </div>
+                            <div class="description text-justify">
+                                <p>
+                                    Performed usability study with non development users on the application, analyzed experiences and implemented changes to rectify the shortcomings. Constant coordination with the development team for fixing urgent issues for the launch. Committed several usability code enhancements at crunch time.
+                                </p>
+                                <p>
+                                    Market Analysis, interview users and understand what is expected out of future App Discovery Platform were also included in my job role during the internship. Presented my ideas and concerns to the VP and dev team manager for changing application architecture and incorporating several user requirements.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <img src="img/Portfolio/quidditch.png"/>
+                            <div class="span5 text-left">
+                                <a href="http://www.youtube.com/watch?v=yXjJ5VFDawQ">Version 1</a>
+                            </div>
+                            <div class="span5 text-right">
+                                <a href="http://www.youtube.com/watch?v=EYTd74Wqjo0">Version 2</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <BR>
+                <div class="row-fluid">
+                    <div class="project span12" href="http://www.pcquest.com/pcquest/news/178832/infosys-infy-bubble">
+                        <div class="span4">
+                            <img src="img/Portfolio/infosys.gif"/>
+                        </div>
+                        <div class="span8">
+                            <div class="title">
+                                Infy Bubble (Infosys In-house Social Network)
+                            </div>
+                            <div class="role">
+                                Frontend developer | Usability Study | Website designer
+                            </div>
+                            <div class="description text-justify">
+                                <p>
+                                    An internal social network open to more than 2 million people of the organization with purpose to provide a platform and enable fun way for knowledge sharing within the organization. It is a basic tool for beginners to search for information for his domain and a platform for the experienced to touchbase with the changing technologies and pass on their own experience to their peers.
+                                </p>
+                                <p>
+                                    As a part of my job role I optimised database, along with a colleague fine tuned Solr based rankings and iterated over them, introduced automated functional testing for UI, worked very closesly with graphic designer and revamped the jargon used, implemented layout and coloring scheme to increase users from both gender.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <HR/> -->
+                <BR/>
+                <div class="row-fluid"><!-- Other Projects -->
+                    <div class="project span6">
+                        <div class="title text-center">
+                            <a href="http://khanscribe.org">
+                                <img style="height:250px;width:400px;" src="img/Portfolio/board.jpg"/>
+                                <BR>
+                                Shape It Up (Board Game)
+                            </a>
+                            <BR/>
+                        </div>
+                    </div>
+                    <!-- <div class="span4">
+                        <div class="thumbnail">
+                            <a href="http://hikeitup.org">
+                                <img src="img/Portfolio/hikeitup.png"/>
+                            </a>
+                            <BR/>
+                        </div>      <BR/>
+                        <div class="thumbnail">
+                            <a href="http://triplepulse.com">
+                                <img src="img/Portfolio/triplepulse.png"/>
+                            </a>
+                            <BR/>
+                        </div>
+                    </div> -->
+                    <div class="project span6">
+                        <div class="title text-center">
+                            <a href="http://losangeles.usc.edu/escope">
+                                <img src="img/Portfolio/smartgrid.png"/><BR>
+                                Smartgrid Research
+                            </a>
+                            <a href="http://ceng.usc.edu/~simmhan/pubs/simmhan-scale-2012.pdf">Publiation</a>
+                        </div>
+                    </div>
+                </div>
+                <BR>
+                <div class="row-fluid">
+                    <div class="project span3">
+                        <div class="title">
+                            Lunch Mixer
+                        </div>
+                    </div>
+                    <div class="project span3">
+                        <div class="title">
+                            Music Surfer
+                        </div>
+                    </div>
+                    <div class="project span3">
+                        <div class="title">
+                            3D Renderer
+                        </div>
+                    </div>
+                    <!-- <div class="span3">
+                        <div class="thumbnail">
+                            <a href="http://tablefor2.org">
+                                tablefor2.org
+                            </a>
+                        </div>
+                    </div> -->
+                    <div class="project span3">
+                        <div class="title">
+                            <a href="http://khanscribe.org">
+                                <!-- <img src="img/Portfolio/khanscribe.png"/> -->
+                                KhanScribe.org</a><BR/>
+                        </div>
+                    </div>
+                </div>
+                <BR/>
+            </div>
+            <div id="process" class="hide">
+                <div class="row-fluid">
+                    <ul>
+                        <li>Requirement Gathering
+                            <BR/>
+                            <ul>
+                                <li>
+                                    Talk to Client
+                                    <br>
+                                    <img style="height:350px;width:500px;" src="img/Home/Customer.jpg">
+                                    <!-- http://www.customerservice.ae/customer-compatibility-management-handling-customer-to-customer-interactions -->
+                                </li>
+                                <li>Analyse Market
+                                    <img src="http://infin8llc.com/wp-content/uploads/2012/10/market-research1.jpg">
+                                    <!-- http://infin8llc.com/2012/10/17/conducting-market-research-for-your-business-plan/ -->
+                                </li>
+                                <li>Identify Target Audience</li>
+                                <li>Talk to some subset of target audience</li>
+                            </ul>
+                        </li>
+                        <li>User Research
+                            <BR/>
+                            <ul>
+                                <li>Create Personas</li>
+                                <li>Interview Users</li>
+                                <li>Conduct Field Research, Online Surveys, Questionnaire, Participant Observer Tests</li>
+                                <li>Storyboarding Scenarios</li>
+                            </ul>
+                        </li>
+                        <li>Brainstorming and Prototyping
+                            <BR/>
+                            <ul>
+                                <li>Whiteboard Prototypes</li>
+                                <li>Paper Prototypes</li>
+                                <li>Wireframes</li>
+                            </ul>
+                        </li>
+                        <li>Usability Testing
+                            <BR/>
+                            <ul>
+                                <li>Recruit Test Users</li>
+                                <li>Create Test Plan
+                                    <BR/>
+                                    <li>Identify goals</li>
+                                    <li>List down features and scenarios to be tested</li>
+                                    <li>Identify tasks to be performed</li>
+                                    <li>Create Screener, Post-test Survey Questionnaire</li>
+                                </li>
+                                <li>Record audio, video, user interaction and expressions</li>
+                            </ul>
+                        </li>
+                        <li>Lean UX and Agile Development
+                        </li>
+                        <li>Automated and manual testing</li>
+                        <li>Bug Fixes, Feature Freeze</li>
+                        <li>Code Freeze, Production deployment, Launch, Brand</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="resume" class="hide span12 text-center">
+            </div>
+            <div id="contact" class="hide">
+                <div class="row-fluid">
+                    <div class="span5">
+                        <div class="text-left"><!-- Tweets -->
+                        <a class="twitter-timeline" href="https://twitter.com/ashvaibhav" data-widget-id="391285208755884033">Tweets by me</a>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/ashvaibhav" data-format="inline" data-related="false"></script>
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <a href="http://www.linkedin.com/in/ashvaibhav">LinkedIn</a>
+                            </div>
+                            <div class="span4">
+                                <a href="http://www.twitter.com/ashvaibhav">Twitter</a>
+                            </div>
+                            <div class="span4">
+                                <a href="http://www.github.com/ashvaibhav">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <div class="footer muted row">
+        <div class="span3">
+            <p class="text-left">
+                &copy; Vaibhav Agarwal
+            </p>
+        </div>
+        <div class="span9">
+            <p class="text-right">
+                Made with <a href="http://bootswatch.com/cyborg/">Bootswatch</a> and powered by <a href="http://www.dropbox.com">Dropbox</a>.
+            </p>
+        </div>
+    </div>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $(document).ready( new function(){
+          //  activateMenu("home");
+
+            //load resume
+         //   $("#resume").innerHTML("<embed src='res/Vaibhav_Agarwal.pdf'  width='826' height='1066' alt='Vaibhav_Agarwal.pdf' pluginspage='http://www.adobe.com/products/acrobat/readstep2.html'>");
+        });
+        function highlightMenu(e) {
+            e = e || window.event;
+            e = e.target || e.srcElement;
+            $("#menu > .active").removeClass("active");
+            //$(e).addClass("active");
+            var control = e.innerText.toLowerCase().trim();
+            $("#pageContent >.show").removeClass("show").addClass("hide");
+            $("[name="+control+"]").addClass("active");
+            $("#"+control).removeClass("hide").addClass("show");
+
+            switch(control){
+                case 'resume':
+                    if(!$("#"+control).html().trim())
+                        $("#"+control).append("<embed src='res/Vaibhav_Agarwal.pdf'  width='826' height='1066' alt='Vaibhav_Agarwal_Resume.pdf' pluginspage='http://www.adobe.com/products/acrobat/readstep2.html'>");
+                    break;
+                case 'contact':
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                    break;
+                default:
+            }
+        }
+    </script>
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/octophile_widgets.js"></script>
+    <NOSCRIPT>
+</body>
+</html>
