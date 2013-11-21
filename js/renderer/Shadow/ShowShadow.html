@@ -1,0 +1,60 @@
+<html>
+<head>
+<style type='text/css'>
+	canvas{
+		background:#000000;
+	}
+</style>
+</head>
+<body  onload='document.getElementById("canvas1").addEventListener("mousedown", showMousePosition, false);'> 
+	<div id='status'></div>
+	<div id='status2'></div>
+	<div id='form'>
+		<!-- Default Camera
+			<input type=checkbox id='camera' value='y'><BR>
+	
+		Rotate Object
+			<input type=radio name=rotate value='x'>RotX
+			<input type=radio name=rotate value='y'>RotY
+			<input type=radio name=rotate value='z'>RotZ
+			<input id='rotDeg' type='text'>Degree<BR>
+		Translate Object
+			<input id='tx' type='text'>Tx
+			<input id='ty'type='text'>Ty
+			<input id='tz' type='text'>Tz<BR>
+		Scale Object
+			<input id='sx' type='text'>Sx
+			<input id='sy' type='text'>Sy
+			<input id='sz' type='text'>Sz<BR>
+	 -->
+			<input type=radio name=shader value='FLAT' style="display:none;">
+			<input type=radio name=shader value='GOURAUD' style="display:none;">
+			<input type=radio name=shader CHECKED value='PHONG' style="display:none;"><BR>
+
+			<input id='texture' type='checkbox' style="display:none;"><BR>
+			<input id='ambientOcclusion' type='checkbox' style="display:none;" CHECKED>
+		<!-- Noise
+			<input id='noise' type='checkbox' ><BR>
+		Wireframe (yellow colored)
+			<input id='wf' type='checkbox'><BR> -->
+	</div>
+	<input id='file' type='file' value = 'Object File' onChange='javascript:main(event);'>
+	
+	<!-- <input type='button' value='LoadTexture' onclick='javascript:loadFile();'> -->
+	
+	<!-- Animation choices
+			<input type=radio name=animation value='FOV'>FOV
+			<input type=radio name=animation  value='La'>Ambient Light
+			<input type=radio name=animation CHECKED value='proceduralTexture'>Texture Mapping
+	<input id='anim' type='button' value='ANIMATE' onClick='javascript:animate();'> -->
+	<div style="width:420px; margin:auto;">
+	<canvas id='canvas1' width='400', height='400'>
+	</canvas>
+	</div>
+	
+	<br>
+	<div id='images2'> </div>
+		
+</body>
+<script type='text/javascript' src='ShowShadow.js'></script>
+</html>
